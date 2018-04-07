@@ -1,0 +1,81 @@
+@import '../../../assets/scss/main.scss';
+
+$max-width: 230px;
+$margin-bottom: 40px;
+
+.about {
+  color: $grey-color-light;
+
+  .image {
+    width: 180px;
+    max-width: $max-width;
+    height: 180px;
+    background-size: cover;
+    background-image: url(../../../assets/images/praagya.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    overflow: hidden;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); /* For Webkit browsers */
+    filter: gray; /* For IE 6 - 9 */
+    transition: all .6s ease;
+    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+    margin-bottom: $margin-bottom;
+
+    &:hover {
+      filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+    }
+  }
+
+  .bio {
+    margin-bottom: $margin-bottom;
+    max-width: $max-width;
+    line-height: 2.8rem;
+    font-size: 1.8rem;
+
+    .emoji {
+      font-size: 1.6rem;
+      padding-top: 30px;
+
+      @include media("retina2x") {
+        font-size: 2.2rem;
+      }
+    }
+  }
+
+  @include media('>small', '<=medium') {
+    .bio {
+      .emoji {
+        font-size: 2.0rem;
+        padding-top: 10px;
+      }
+    }
+  }
+
+  @include media('<=small') {
+    .bio {
+      line-height: 2.0rem;
+      font-size: 1.4rem;
+
+      .emoji {
+        font-size: 1.8rem;
+        padding-top: 10px;
+      }
+    }
+  }
+
+  @include media('<=medium') {
+    text-align: center;
+    margin-bottom: 0px;
+
+    .image {
+      margin: 0 auto $margin-bottom auto;
+    }
+
+    .bio {
+      margin: 0 auto;
+    }
+  }
+}

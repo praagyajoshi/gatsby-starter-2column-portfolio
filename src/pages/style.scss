@@ -1,0 +1,143 @@
+@import '../assets/scss/main.scss';
+
+$vertical-padding: 50px;
+$horizontal-padding: 64px;
+$main-width: 65%;
+$main-margin-right: 35%;
+$aside-width: 35%;
+
+.main {
+  margin: 0 auto;
+
+  h3 {
+    font-size: 3.4rem;
+    line-height: 1.6;
+
+    @include media('<=xsmall') {
+      font-size: 2.8rem;
+    }
+
+    @include media('>=medium', '<large') {
+      font-size: 3rem;
+    }
+  }
+
+  // Setting the width and padding sizes
+  @include media('>=large') {
+    $main-width: 65%;
+    $main-margin-right: 35%;
+    $vertical-padding: 50px;
+    $horizontal-padding: 8%;
+
+    width: $main-width;
+    margin-right: $main-margin-right; 
+    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+  }
+  @include media('>=medium', '<large') {
+    $main-width: 70%;
+    $main-margin-right: 30%;
+    $vertical-padding: 50px;
+    $horizontal-padding: 8%;
+
+    width: $main-width;
+    margin-right: $main-margin-right; 
+    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+  }
+  @include media('>xsmall', '<medium') {
+    $main-width: 100%;
+    $main-margin-right: 0;
+    $vertical-padding: 50px;
+    $horizontal-padding: 48px;
+
+    width: $main-width;
+    margin-right: $main-margin-right; 
+    padding: $vertical-padding $horizontal-padding 0 $horizontal-padding;
+  }
+  @include media('<=xsmall') {
+    $main-width: 100%;
+    $main-margin-right: 0;
+    $vertical-padding: 50px;
+    $horizontal-padding: 24px;
+
+    width: $main-width;
+    margin-right: $main-margin-right; 
+    padding: $vertical-padding $horizontal-padding 0 $horizontal-padding;
+  }
+}
+
+.aside {
+  align-self: stretch;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+
+  // Positioning on the side for
+  // bigger screens
+  @include media('>=medium') {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    right: 0;
+    top: 0;
+    height: 100%;
+
+    .top {
+      flex-grow: 1;
+    }
+
+    .bottom {
+      width: 100%;
+    }
+  }
+
+  // Positioning at the bottom for
+  // smaller screens
+  @include media('<medium') {
+    position: relative;
+    text-align: center;
+    right: auto;
+    top: auto;
+    display: block;
+    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+
+    .bottom {
+      padding: $vertical-padding $horizontal-padding 0 $horizontal-padding;
+    }
+  }
+
+  // Setting the width and padding sizes
+  @include media('>=large') {
+    $aside-width: 35%;
+    $vertical-padding: 50px;
+    $horizontal-padding: 64px;
+
+    width: $aside-width;
+    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+  }
+  @include media('>=medium', '<large') {
+    $aside-width: 30%;
+    $vertical-padding: 50px;
+    $horizontal-padding: 48px;
+
+    width: $aside-width;
+    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+  }
+  @include media('>xsmall', '<medium') {
+    $aside-width: 100%;
+    $vertical-padding: 50px;
+    $horizontal-padding: 48px;
+
+    width: $aside-width;
+    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+  }
+  @include media('<=xsmall') {
+    $aside-width: 100%;
+    $vertical-padding: 50px;
+    $horizontal-padding: 24px;
+
+    width: $aside-width;
+    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+  }
+}

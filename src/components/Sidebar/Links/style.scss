@@ -1,0 +1,45 @@
+@import '../../../assets/scss/main.scss';
+
+.links {
+  color: $grey-color;
+  border-top: 1px solid $border-color-dark;
+  padding-top: 20px;
+
+  ul.icons-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding-bottom: 10px;
+
+    li.icon {
+      display: inline-block;
+      padding-right: 18px;
+
+      &:last-of-type {
+        padding-right: 0;
+      }
+    }
+  }
+
+  i.fa {
+    font-size: 2.2rem;
+  }
+
+  a {
+    color: $grey-color;
+    transition: all .6s ease;
+    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  .small {
+    font-size: 1.3rem;
+    transition: all .6s ease;
+    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+    cursor: normal;
+    color: $grey-color;
+  }
+}

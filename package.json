@@ -1,6 +1,10 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "gatsby-starter-2column-portfolio",
+  "description": "Gatsby 2 Column Portfolio Starter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/praagyajoshi/gatsby-starter-2column-portfolio"
+  },
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",

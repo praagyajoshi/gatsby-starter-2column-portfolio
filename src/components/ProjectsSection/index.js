@@ -2,41 +2,36 @@ import React from 'react'
 import Section from '../Section'
 import ExperienceUnit from '../ExperienceUnit'
 
-import spotifyQuizLogo from '../../assets/images/projects/spotify-quiz.png'
-import littleNomadLogo from '../../assets/images/projects/little-nomad.png'
-import walkthroughViewGif from '../../assets/images/projects/wvwalkthroughview-optimize.gif'
+import golLogo from '../../assets/images/projects/gol.png'
+import bradescoLogo from '../../assets/images/projects/bradesco.png'
+import talkativeLogo from '../../assets/images/projects/talkative.svg'
 
 class ProjectsSection extends React.Component {
   render() {
     return (
       <Section title="Projects">
         <div className="row">
-          <ExperienceUnit
-            logo={littleNomadLogo}
-            colour="#FFFFFF"
-            title="Little Nomad"
-            link="https://www.littlenomad.co/"
-            timeperiod="2017 - ???"
-            subtitle="A platform for socially aware travellers. Runs on
-              React+Redux with a Ruby on Rails backend."
-          />
-          <ExperienceUnit
-            logo={spotifyQuizLogo}
-            colour="#20DC6B"
-            title="Music Quiz for Spotify"
-            link="https://quiz.praagya.com/"
-            timeperiod="2017"
-            subtitle="A fun quiz which tests your knowledge of music that
-              you've saved. Built using React/Redux."
-          />
-          <ExperienceUnit
-            logo={walkthroughViewGif}
-            colour="#312F31"
-            title="WalkthroughView"
-            link="https://github.com/praagyajoshi/WVWalkthroughView"
+        <ExperienceUnit
+            logo={talkativeLogo}
+            colour="#01bb9b"
+            title="Talkative"
+            link="https://talkative.media/"
             timeperiod="2016"
-            subtitle="A drop in utility to help onboard a new user/feature.
-              Written in Objective C."
+            subtitle="Led the whole product team for development of the application. Team included developers, designers, testers, art directors, and support."
+          />
+          <ExperienceUnit
+            logo={golLogo}
+            colour="#FF7122"
+            title="GOL Linhas Aéreas"
+            link="https://itunes.apple.com/br/app/gol-check-in-status-do-voo/id337961662?mt=8"
+            subtitle="Led the team responsible for redesigning and developing the new GOL app. Team included designers, developers, testers, translators and copywriters."
+          />
+          <ExperienceUnit
+            logo={bradescoLogo}
+            colour="#FFFFFF"
+            title="Bradesco for Glass"
+            link="https://banco.bradesco/"
+            subtitle="Led the team responsible for creating the first Google Glass application released in Brazil."
           />
         </div>
       </Section>

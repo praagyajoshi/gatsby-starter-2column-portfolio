@@ -2,9 +2,9 @@ import React from 'react'
 import Section from '../Section'
 import ExperienceUnit from '../ExperienceUnit'
 
-import zomatoLogo from '../../assets/images/experience/zomato-logo.svg'
-import fitsoLogo from '../../assets/images/experience/fitso-logo.jpg'
-import kayakoLogo from '../../assets/images/experience/kayako-logo-2.jpg'
+import dijitallyLogo from '../../assets/images/experience/dijitally.svg'
+import wololoLogo from '../../assets/images/experience/wololo.png'
+import epicLogo from '../../assets/images/experience/epic.svg'
 
 class ExperienceSection extends React.Component {
   render() {
@@ -12,32 +12,31 @@ class ExperienceSection extends React.Component {
       <Section title="Experience">
         <div className="row">
           <ExperienceUnit
-            logo={zomatoLogo}
-            colour='#CB202D'
-            title='Zomato'
-            link='https://www.zomato.com/'
-            timeperiod='2014 - 2015'
-            subtitle='Learnt the ins and outs of product development and
-              built various features including a completely new product.'
+            logo={dijitallyLogo}
+            colour='#000000'
+            title='Dijitally'
+            role='Tech Lead'
+            link='https://www.dijitally.com/'
+            timeperiod='2018 - Present'
+            subtitle='Leading the restructuring of the technology department and all operations related to digital products.'
           />
           <ExperienceUnit
-            logo={fitsoLogo}
+            logo={wololoLogo}
+            colour='#382670'
+            title='Wololo'
+            role='CTO'
+            link='https://talkative.media/'
+            timeperiod='2017 – 2018'
+            subtitle='Lead the Product Design and Development team with 16 employees, for the Talkative app for iOS, Android and Web. Role included drafting, implementing, and managing all team processes, deciding upon technology adoption with attention to cost-efficiency, and managing expectations from board members and investors.'
+          />
+          <ExperienceUnit
+            logo={epicLogo}
             colour='#FFFFFF'
-            title='Fitso'
-            link='https://www.getfitso.com/'
-            timeperiod='2016'
-            subtitle='Built real time GPS tracking on the iOS app,
-              all consumer facing web modules and external APIs in
-              this early stage startup.'
-          />
-          <ExperienceUnit
-            logo={kayakoLogo}
-            colour='#403949'
-            title='Kayako'
-            link='https://www.kayako.com/'
-            timeperiod='2017 - 2018'
-            subtitle='Worked as a Product Engineer on email processing,
-              push notifications, SLAs amongst other things.'
+            title='Epic Awesome'
+            role='Executive Producer'
+            link='https://epicawesome.co'
+            timeperiod='2011 - 2018'
+            subtitle='I led and managed the product and projects lifecycle, from initial concepts to final delivery, managing a cross-functional team of designers, developers, copywriters, marketers, testers, etc.'
           />
         </div>
       </Section>

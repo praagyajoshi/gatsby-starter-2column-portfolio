@@ -10,13 +10,11 @@ const IndexPage = () => (
     <div className="index">
       <div className="main">
         <h5>
-          Hi, I'm <span className="bold">Praagya Joshi</span>
+          Hi, I'm <span className="bold">Gus Fune</span>
         </h5>
 
         <h3 className="bold">
-          Full stack product engineer with 3 years' experience building products
-          for with a leading food tech company, an early stage fitness start up
-          and a leading SaaS provider.
+          Tech Lead and Product Manager with 11 years experience building products and leading cross-functional teams.
         </h3>
 
         <ExperienceSection />

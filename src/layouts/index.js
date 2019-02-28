@@ -5,7 +5,7 @@ import get from 'lodash/get'
 
 import './style.scss'
 
-import profileImage from '../assets/images/praagya.jpg'
+import profileImage from '../assets/images/gusfune.jpg'
 import favicon16 from '../assets/favicons/favicon-16x16.png'
 import favicon32 from '../assets/favicons/favicon-32x32.png'
 

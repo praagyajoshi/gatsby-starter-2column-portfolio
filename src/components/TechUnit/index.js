@@ -5,7 +5,7 @@ import './style.scss'
 class TechUnit extends Component {
   render() {
     return (
-      <div className="tech-unit col-xs-1 col-sm-1 col-md-1">
+      <div className="tech-unit col-xs-3 col-sm-3 col-md-1">
         <div
           className="image"
           style={{

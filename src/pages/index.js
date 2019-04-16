@@ -1,6 +1,7 @@
 import React from 'react'
 import ExperienceSection from '../components/ExperienceSection'
 import ProjectsSection from '../components/ProjectsSection'
+import TechSection from '../components/TechSection'
 import About from '../components/Sidebar/About'
 import Links from '../components/Sidebar/Links'
 
@@ -14,11 +15,11 @@ const IndexPage = () => (
         </h5>
 
         <h3 className="bold">
-          Tech Lead and Product Manager with 11 years experience building products and leading cross-functional teams.
+          I am a highly technical web and mobile product manager.
         </h3>
 
-        <ExperienceSection />
         <ProjectsSection />
+        <TechSection />
       </div>
 
       <div className="aside">

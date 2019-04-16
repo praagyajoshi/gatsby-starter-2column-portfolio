@@ -1,4 +1,6 @@
 # gatsby-starter-2column-portfolio
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ae5b07e7-cdb0-4752-bb22-d2cee97134dd/deploy-status)](https://app.netlify.com/sites/gusfune/deploys)
+
 A minimalistic portfolio starter for [Gatsby](https://www.gatsbyjs.org/) with a 2 column layout.  
 
 ![website-preview](https://user-images.githubusercontent.com/2060518/38455405-416af23e-3a95-11e8-92f9-ae27f7b601a6.png)

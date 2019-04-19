@@ -7,9 +7,8 @@
   },
   "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop",
-    "build": "gatsby build",
-    "heroku-postbuild": "gatsby build"
+    "dev": "gatsby develop",
+    "build": "gatsby build"
   },
   "dependencies": {
     "flexboxgrid": "^6.3.1",

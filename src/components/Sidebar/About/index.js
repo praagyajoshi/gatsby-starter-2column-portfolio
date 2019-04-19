@@ -10,10 +10,8 @@ class About extends Component {
         <div className="image">
         </div>
         <div className="bio">
-          I am an expert with over 10 years experience on making ideas come to life.
-          <div className="emoji">
-            🐼 &nbsp; 🥓 &nbsp; 🍔 &nbsp; 🐕
-          </div>
+          <p>I’m an experienced product manager who can fix hard-to-find bugs, test design changes in the browser, and automate anything my team needs to get done faster.</p>
+          <p>I’ve delivered over 100 projects for clients like 3M, Coca-Cola, Behold Studios, BMW, Heineken, McDonald's and Motorola. I’ve also worked with early-stage startups on everything from product research to hiring, team-building, and even accounting.</p>
         </div>
         <div className="certification">
           <img src={cspo} alt="Certified Scrum Product Owner®" width="100%" height="auto" />

@@ -36,6 +36,7 @@
   .subtitle {
     color: $grey-color;
     font-size: 1.4rem;
+    margin-bottom: 1rem;
   }
 
   @include media('>=medium', '<large') {

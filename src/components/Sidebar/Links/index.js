@@ -29,6 +29,11 @@ class Links extends Component {
             </a>
           </li>
           <li className="icon">
+          <a href="https://steamcommunity.com/id/the_killer_panda/" target="_blank">
+            <i className="fa fa-steam"></i>
+          </a>
+        </li>
+          <li className="icon">
             <a href="mailto:gusfune@protonmail.com" target="_blank">
               <i className="fa fa-envelope"></i>
             </a>

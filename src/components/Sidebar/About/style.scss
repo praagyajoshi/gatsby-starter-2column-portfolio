@@ -30,31 +30,19 @@ $margin-bottom: 40px;
   }
 
   .certification img {
-    max-width: 50%;
+    max-width: 20%;
   }
 
   .bio {
     margin-bottom: $margin-bottom;
     max-width: $max-width;
-    line-height: 2.8rem;
-    font-size: 1.8rem;
-
-    .emoji {
-      font-size: 1.6rem;
-      padding-top: 30px;
-
-      @include media("retina2x") {
-        font-size: 2.2rem;
-      }
-    }
+    line-height: 1.4;
+    font-size: 1.4rem;
   }
 
   @include media('>small', '<=medium') {
     .bio {
-      .emoji {
-        font-size: 2.0rem;
-        padding-top: 10px;
-      }
+
     }
   }
 
@@ -63,10 +51,6 @@ $margin-bottom: 40px;
       line-height: 2.0rem;
       font-size: 1.4rem;
 
-      .emoji {
-        font-size: 1.8rem;
-        padding-top: 10px;
-      }
     }
   }
 

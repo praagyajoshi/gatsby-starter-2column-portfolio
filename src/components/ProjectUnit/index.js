@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import './style.scss'
 
-class ExperienceUnit extends Component {
+class ProjectUnit extends Component {
   render() {
     return (
       <div className="experience-unit col-xs-12 col-sm-6 col-md-4">
@@ -18,18 +18,17 @@ class ExperienceUnit extends Component {
         <div className="title bold">
           {this.props.title}
         </div>
-        <div className="role">
-          {this.props.role}
-        </div>
-        <div className="time-period">
-          {this.props.timeperiod}
-        </div>
         <div className="subtitle">
           {this.props.subtitle}
         </div>
+        <div className="subtitle">
+          <strong>Role:</strong> {this.props.role}<br/>
+          <strong>Year:</strong> {this.props.year}<br/>
+          <strong>Managed Team:</strong> {this.props.team}<br/>
+        </div>        
       </div>
     )
   }
 }
 
-export default ExperienceUnit
+export default ProjectUnit

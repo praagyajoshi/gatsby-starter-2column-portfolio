@@ -22,6 +22,7 @@ class ProjectsSection extends React.Component {
             subtitle="Main developer and maintenance for OLA Australia website."
             role="Lead Developer"
             year="2019"
+            team="Designers and Developers"
           />
         <ProjectUnit
             logo={talkativeLogo}
@@ -31,7 +32,7 @@ class ProjectsSection extends React.Component {
             subtitle="Lead the whole product team for development of the application. Team included developers, designers, testers, art directors, and support."
             role="CTO"
             year="2017"
-            team="TEAM"
+            team="Designers, Developers, Testers and Support"
           />
         <ProjectUnit
             logo={golLogo}
@@ -41,6 +42,7 @@ class ProjectsSection extends React.Component {
             subtitle="Lead the team responsible for redesigning and developing the new GOL app. Team included designers, developers, testers, translators and copywriters."
             role="Product Lead"
             year="2016"
+            team="Designers, UX Researcher, Testers, Developers and Translators"
           />
           
         {/*}

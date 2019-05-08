@@ -24,7 +24,6 @@ class ProjectUnit extends Component {
         <div className="subtitle">
           <strong>Role:</strong> {this.props.role}<br/>
           <strong>Year:</strong> {this.props.year}<br/>
-          <strong>Managed Team:</strong> {this.props.team}<br/>
         </div>        
       </div>
     )

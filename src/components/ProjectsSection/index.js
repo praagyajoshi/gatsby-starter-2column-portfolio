@@ -14,6 +14,7 @@ class ProjectsSection extends React.Component {
     return (
       <Section title="Selected Projects">
         <div className="row">
+        {/*}
         <ProjectUnit
             logo={olaLogo}
             colour="#ffffff"
@@ -23,6 +24,7 @@ class ProjectsSection extends React.Component {
             role="Led Developer"
             year="2019"
           />
+        {*/}
         <ProjectUnit
             logo={talkativeLogo}
             colour="#01bb9b"
@@ -50,6 +52,7 @@ class ProjectsSection extends React.Component {
             role="Product Lead"
             year="2014"
           />
+          {/*}
           <ProjectUnit
             logo={connectorLogo}
             colour="#442159"
@@ -68,6 +71,7 @@ class ProjectsSection extends React.Component {
             role="Developer"
             year="2017"
           />
+          {*/}
         </div>
       </Section>
     )

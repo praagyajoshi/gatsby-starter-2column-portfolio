@@ -44,8 +44,6 @@ class ProjectsSection extends React.Component {
             year="2016"
             team="Designers, UX Researcher, Testers, Developers and Translators"
           />
-          
-        {/*}
           <ProjectUnit
             logo={bradescoLogo}
             colour="#FFFFFF"
@@ -67,7 +65,6 @@ class ProjectsSection extends React.Component {
             link="http://www.roguesnail.com/"
             subtitle="Developed the website for this independent game company."
           />
-        {*/}
         </div>
       </Section>
     )

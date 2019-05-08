@@ -49,7 +49,10 @@ class ProjectsSection extends React.Component {
             colour="#FFFFFF"
             title="Bradesco for Glass"
             link="https://banco.bradesco/"
-            subtitle="Lead the team responsible for creating the first Google Glass application released in Brazil working with developers, designers and client."
+            subtitle="Lead the team responsible for redesigning and developing the new GOL app. Team included designers, developers, testers, translators and copywriters."
+            role="Product Lead"
+            year="2014"
+            team="Designers and Developers"
           />
           <ProjectUnit
             logo={connectorLogo}
@@ -57,13 +60,19 @@ class ProjectsSection extends React.Component {
             title="Connector"
             link="https://connector.ie/"
             subtitle="Lead development team for front-end and part of back-end work for agency website."
+            role="Lead Developer"
+            year="2018"
+            team="Designers and Developers"
           />
           <ProjectUnit
             logo={rogueLogo}
             colour="#0c70a5"
-            title="Rogue Snail"
+            title="Developer"
             link="http://www.roguesnail.com/"
             subtitle="Developed the website for this independent game company."
+            role="Developer"
+            year="2017"
+            team="Designers and Developers"
           />
         </div>
       </Section>

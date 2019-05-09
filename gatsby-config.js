@@ -19,8 +19,8 @@ module.exports = {
   ],
   siteMetadata: {
     title: 'Gus Fune',
-    description: 'Tech Lead',
-    keywords: 'tehc lead, product manager, portfolio, personal website',
+    description: 'I\'m a highly technical Web & Mobile Product Manager who delivered over 100 products to scale.',
+    keywords: 'tech lead, product manager, portfolio, personal website',
     url: 'https://gusfune.com'
   }
 };

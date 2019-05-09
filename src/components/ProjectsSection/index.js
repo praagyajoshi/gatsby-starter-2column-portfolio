@@ -5,9 +5,9 @@ import ProjectUnit from '../ProjectUnit'
 import golLogo from '../../assets/images/projects/gol.png'
 import bradescoLogo from '../../assets/images/projects/bradesco.png'
 import talkativeLogo from '../../assets/images/projects/talkative.svg'
-import connectorLogo from '../../assets/images/projects/connector.png'
-import rogueLogo from '../../assets/images/projects/rogue.png'
-import olaLogo from '../../assets/images/projects/ola.svg'
+//import connectorLogo from '../../assets/images/projects/connector.png'
+//import rogueLogo from '../../assets/images/projects/rogue.png'
+//import olaLogo from '../../assets/images/projects/ola.svg'
 
 class ProjectsSection extends React.Component {
   render() {

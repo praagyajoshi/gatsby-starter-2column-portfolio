@@ -12,7 +12,7 @@ import olaLogo from '../../assets/images/projects/ola.svg'
 class ProjectsSection extends React.Component {
   render() {
     return (
-      <Section title="Selected Projects">
+      <Section title="These are some selected projects from the last 5 years that I'm really proud of">
         <div className="row">
         {/*}
         <ProjectUnit
@@ -30,7 +30,7 @@ class ProjectsSection extends React.Component {
             colour="#01bb9b"
             title="Talkative"
             link="https://talkative.media/"
-            subtitle="Led the whole product team for development of the app for Web, iOS and Android and kept over 4,5 starts reviews on stores."
+            subtitle="Led the whole product team for development of a new product for Web, iOS and Android and kept over 4,5 starts reviews on stores."
             role="CTO"
             year="2017"
           />
@@ -39,7 +39,7 @@ class ProjectsSection extends React.Component {
             colour="#FF7122"
             title="GOL Linhas Aéreas"
             link="https://itunes.apple.com/br/app/gol-check-in-status-do-voo/id337961662?mt=8"
-            subtitle="Led the team responsible for redesigning and developing the new GOL app."
+            subtitle="Led the team responsible for redesigning and developing a more modern iOS and Android app for GOL, the biggest airline company in Brazil."
             role="Product Lead"
             year="2016"
           />
@@ -48,7 +48,7 @@ class ProjectsSection extends React.Component {
             colour="#FFFFFF"
             title="Bradesco for Glass"
             link="https://banco.bradesco/"
-            subtitle="Led the production of the first wereable product for banking in Brazil"
+            subtitle="Led the production of the first wereable product in Brazil for Bradesco, the third biggest bank in the country."
             role="Product Lead"
             year="2014"
           />

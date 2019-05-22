@@ -2,8 +2,6 @@ import React from 'react'
 import ProjectsSection from '../components/ProjectsSection'
 import About from '../components/Sidebar/About'
 import Links from '../components/Sidebar/Links'
-import Amplitude from 'react-amplitude';
-Amplitude.init('b5b13e3cfa2b71ed0fabe1509115ccfc');
 
 import './style.scss'
 

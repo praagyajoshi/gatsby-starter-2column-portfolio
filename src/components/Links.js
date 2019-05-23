@@ -40,7 +40,7 @@ class Links extends Component {
           </li>
         </ul>
         <div className="small">
-          Built with ❤️ using <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">GatsbyJS</a>
+          Built with <span role="img">❤️</span> using <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">GatsbyJS</a>
         </div>
       </div>
     )

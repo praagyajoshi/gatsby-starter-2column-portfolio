@@ -5,6 +5,12 @@ A minimalistic portfolio starter for [Gatsby](https://www.gatsbyjs.org/) with a 
 
 ![website-preview](https://user-images.githubusercontent.com/2060518/38455405-416af23e-3a95-11e8-92f9-ae27f7b601a6.png)
 
+This project is based on [gatsby-starter-2column-portfolio](https://github.com/praagyajoshi/gatsby-starter-2column-portfolio) by [praagyajoshi](https://github.com/praagyajoshi) with a series of customizations:
+
+- Updated from Gatsby v1 to v2.
+- Reorganized components according to Gatsby V2 and my personal needs.
+- Linked project to Contentful API to pull Projects dynamically.
+
 ## Demo
 See it in action [here](http://2column-portfolio.surge.sh/).
 

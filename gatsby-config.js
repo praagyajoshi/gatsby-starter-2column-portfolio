@@ -1,6 +1,9 @@
+require('dotenv').config()
+
 module.exports = {
   plugins: [
     'gatsby-plugin-sass',
+    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -12,9 +15,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-7103855-1",
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
         head: true
       }
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        downloadLocal: true,
+      },
     },
   ],
   siteMetadata: {

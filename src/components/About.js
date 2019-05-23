@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import cspo from "../../../assets/images/seal-cspo.png" 
+import cspo from "../assets/images/seal-cspo.png" 
 
-import './style.scss'
+import './About.scss'
 
 class About extends Component {
   render () {

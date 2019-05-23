@@ -1,6 +1,7 @@
 module.exports = {
   plugins: [
     'gatsby-plugin-sass',
+    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -15,6 +16,14 @@ module.exports = {
         trackingId: "UA-7103855-1",
         head: true
       }
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `5iui2q54um6l`,
+        accessToken: `L8bG4DlOdJ-22wAmEs5Ips1KjvTddP4DS4OZt9c26-I`,
+        downloadLocal: false,
+      },
     },
   ],
   siteMetadata: {

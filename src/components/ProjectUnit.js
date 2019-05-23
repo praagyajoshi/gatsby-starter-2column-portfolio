@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import './style.scss'
+import './ProjectUnit.scss'
 
 class ProjectUnit extends Component {
   render() {

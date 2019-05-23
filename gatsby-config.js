@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   plugins: [
     'gatsby-plugin-sass',
@@ -13,15 +15,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-7103855-1",
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
         head: true
       }
     },
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `5iui2q54um6l`,
-        accessToken: `L8bG4DlOdJ-22wAmEs5Ips1KjvTddP4DS4OZt9c26-I`,
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
         downloadLocal: true,
       },
     },

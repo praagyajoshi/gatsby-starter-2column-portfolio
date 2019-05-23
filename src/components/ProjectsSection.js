@@ -33,7 +33,6 @@ export default ( children ) => (
     `}
     render={data => (
         <Section title="These are some selected projects from the last years that I'm really proud of">
-          {console.log(data.allContentfulProject)}
           <div className="row">
           {data.allContentfulProject.nodes.map(node => (
             <ProjectUnit

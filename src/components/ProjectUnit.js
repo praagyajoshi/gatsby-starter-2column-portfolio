@@ -5,7 +5,7 @@ import './ProjectUnit.scss'
 class ProjectUnit extends Component {
   render() {
     return (
-      <div className="experience-unit col-xs-12 col-sm-6 col-md-4">
+      <div className="experience-unit col-xs-12 col-sm-6 col-md-4" id={this.props.id}>
         <a href={this.props.link} target="_blank" rel="noopener noreferrer">
           <div
             className="image"

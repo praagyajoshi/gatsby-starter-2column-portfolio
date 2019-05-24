@@ -36,6 +36,7 @@ export default ( children ) => (
           <div className="row">
           {data.allContentfulProject.nodes.map(node => (
             <ProjectUnit
+              id={node.id}
               logo={node.logo.file.url}
               colour={node.colour}
               title={node.title}

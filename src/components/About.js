@@ -6,10 +6,17 @@ import './About.scss'
 export default () => (
   <StaticQuery
     query={graphql`
-      query CSPOImage {
-        file(relativePath: { eq: "seal-cspo.png"}) {
+      query {
+        CSPOImage: file(relativePath: { eq: "seal-cspo.png"}) {
           childImageSharp {
             fixed(width: 92, height: 92) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        Avatar: file(relativePath: { eq: "gusfune.jpg"}) {
+          childImageSharp {
+            fixed(width: 180, height: 180) {
               ...GatsbyImageSharpFixed
             }
           }
@@ -18,7 +25,14 @@ export default () => (
     `}
   render={data => (
     <div className="about">
-      <div className="image"></div>
+      <div className="image">
+        <Img
+          title="Gus fune"
+          alt="Gus fune"
+          fixed={data.Avatar.childImageSharp.fixed}
+        />
+      </div>
+      {console.log(data)}
       <div className="bio">
         <p>I’m an experienced product manager who can fix hard-to-find bugs, test design changes in the browser, and automate anything my team needs to get done faster.</p>
         <p>I’ve delivered over 100 projects for clients like 3M, Coca-Cola, Behold Studios, BMW, Heineken, McDonald's and Motorola. I’ve also worked with early-stage startups on everything from product research to hiring, team-building, and even accounting.</p>
@@ -27,7 +41,7 @@ export default () => (
       <Img
         title="Certified Scrum Product Owner®"
         alt="Certified Scrum Product Owner®"
-        fixed={data.file.childImageSharp.fixed}
+        fixed={data.CSPOImage.childImageSharp.fixed}
       />
       </div>
     </div>

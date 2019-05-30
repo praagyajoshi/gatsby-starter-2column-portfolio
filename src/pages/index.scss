@@ -92,7 +92,7 @@ $aside-width: 35%;
 
   // Setting the width and padding sizes
   @include media('>=large') {
-    $main-width: 65%;
+    $main-width: calc(100% - 358px);
     $main-margin-right: 35%;
     $vertical-padding: 50px;
     $horizontal-padding: 8%;
@@ -138,6 +138,7 @@ $aside-width: 35%;
   margin: 0 auto;
   background-color: black;
   color: white;
+  max-width: 358px;
 
   // Positioning on the side for
   // bigger screens
@@ -169,6 +170,7 @@ $aside-width: 35%;
     top: auto;
     display: block;
     padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+    max-width: 100%;
 
     .bottom {
       padding: $vertical-padding $horizontal-padding 0 $horizontal-padding;

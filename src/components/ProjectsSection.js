@@ -12,7 +12,12 @@ export default ( children ) => (
   <StaticQuery
     query={graphql`
       query ProjectsSectionQuery {
-        allContentfulProject {
+        allContentfulProject(
+          sort: {
+            fields: [year],
+            order:DESC
+          }
+        ) {
             nodes {
               id
               logo {

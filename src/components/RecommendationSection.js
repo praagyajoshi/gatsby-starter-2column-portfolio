@@ -18,6 +18,7 @@ export default ( children ) => (
             nodes {
               id
               photo {
+                title
                 file {
                   url
                 }
@@ -38,7 +39,7 @@ export default ( children ) => (
             {data.allContentfulRecommendation.nodes.map(node => (
               <RecommendationUnit
                 id={node.id}
-                photo={node.photo.file.url}
+                photo={node.photo}
                 name={node.name}
                 context={node.context}
                 text={node.content.content}

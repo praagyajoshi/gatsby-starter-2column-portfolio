@@ -9,7 +9,9 @@ class RecommendationUnit extends Component {
           <div className="col-xs-2">
             <img
               className="image"
-              src={this.props.photo}
+              src={this.props.photo.file.url}
+              title={this.props.photo.title}
+              alt={this.props.photo.title}
             />
           </div>
           <div className="col-xs-10">

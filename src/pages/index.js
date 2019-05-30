@@ -12,6 +12,7 @@ import './index.scss'
 import profileImage from '../assets/images/gusfune.jpg'
 import favicon16 from '../assets/favicons/favicon-16x16.png'
 import favicon32 from '../assets/favicons/favicon-32x32.png'
+import RecommendationSection from '../components/RecommendationSection';
 
 const IndexPage = ({ data }) => (
   <div className="template-wrapper">
@@ -40,6 +41,7 @@ const IndexPage = ({ data }) => (
           I'm a highly technical Web & Mobile Product Manager who delivered over 100 products to scale.
         </h3>
         <ProjectsSection />
+        <RecommendationSection />
       </div>
 
       <div className="aside">

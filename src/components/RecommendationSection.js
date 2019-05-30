@@ -7,7 +7,7 @@ import { StaticQuery, graphql } from 'gatsby'
 const SliderSettings = {
   dots: true,
   autoplay: true,
-  autoplaySpeed: 3500,
+  autoplaySpeed: 5000,
   arrows: false
 };
 export default ( children ) => (

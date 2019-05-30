@@ -5,6 +5,7 @@ $margin-bottom: 40px;
 
 .about {
   color: $grey-color-light;
+  max-width: $max-width;
 
   .image {
     width: 180px;
@@ -31,7 +32,6 @@ $margin-bottom: 40px;
 
   .bio {
     margin-bottom: $margin-bottom;
-    max-width: $max-width;
     line-height: 1.4;
     font-size: 1.4rem;
   }
@@ -53,6 +53,7 @@ $margin-bottom: 40px;
   @include media('<=medium') {
     text-align: center;
     margin-bottom: 0px;
+    max-width: 100%;
 
     .image {
       margin: 0 auto $margin-bottom auto;

@@ -36,6 +36,13 @@ $margin-bottom: 40px;
     font-size: 1.4rem;
   }
 
+  @media only screen and (max-height: 700px) {
+    .image {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
   @include media('>small', '<=medium') {
     .bio {
 

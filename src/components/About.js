@@ -16,8 +16,8 @@ export default () => (
         }
         Avatar: file(relativePath: { eq: "gusfune.jpg"}) {
           childImageSharp {
-            fixed(width: 180, height: 180) {
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 180, maxHeight: 180) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -29,7 +29,7 @@ export default () => (
         <Img
           title="Gus fune"
           alt="Gus fune"
-          fixed={data.Avatar.childImageSharp.fixed}
+          fluid={data.Avatar.childImageSharp.fluid}
         />
       </div>
       {console.log(data)}

@@ -15,27 +15,26 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "flexboxgrid": "^6.3.1",
     "font-awesome": "^4.7.0",
-    "gatsby": "^2.7.1",
-    "gatsby-image": "^2.1.0",
-    "gatsby-link": "^1.6.46",
-    "gatsby-plugin-google-fonts": "0.0.4",
-    "gatsby-plugin-google-tagmanager": "^2.0.13",
-    "gatsby-plugin-netlify": "^2.0.17",
-    "gatsby-plugin-react-helmet": "^3.0.12",
-    "gatsby-plugin-sass": "^2.0.11",
-    "gatsby-plugin-sharp": "^2.1.0",
-    "gatsby-source-contentful": "^2.0.62",
-    "gatsby-transformer-sharp": "^2.1.19",
+    "gatsby": "^2.13.57",
+    "gatsby-image": "^2.2.8",
+    "gatsby-link": "^2.2.4",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-google-tagmanager": "^2.1.5",
+    "gatsby-plugin-netlify": "^2.1.4",
+    "gatsby-plugin-react-helmet": "^3.1.3",
+    "gatsby-plugin-sass": "^2.1.6",
+    "gatsby-plugin-sharp": "^2.2.11",
+    "gatsby-source-contentful": "^2.1.19",
+    "gatsby-transformer-sharp": "^2.2.6",
     "history": "^4.9.0",
     "include-media": "^1.4.9",
     "node-sass": "^4.12.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
-    "react-router-dom": "^5.0.0",
-    "webpack": "^4.32.2"
+    "react-router-dom": "^5.0.1"
   },
   "devDependencies": {
-    "webpack": "^4.32.2"
+    "webpack": "^4.39.1"
   }
 }

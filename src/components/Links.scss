@@ -1,4 +1,4 @@
-@import '../assets/scss/main.scss';
+@import "../assets/scss/main.scss";
 
 .links {
   color: $grey-color;
@@ -27,8 +27,8 @@
 
   a {
     color: $grey-color;
-    transition: all .6s ease;
-    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease; /* Fade to color for Chrome and Safari */
 
     &:hover {
       color: white;
@@ -37,8 +37,8 @@
 
   .small {
     font-size: 1.3rem;
-    transition: all .6s ease;
-    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease; /* Fade to color for Chrome and Safari */
     cursor: normal;
     color: $grey-color;
   }

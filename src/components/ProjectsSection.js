@@ -1,44 +1,38 @@
-import React from 'react'
-import Section from './Section'
-import ProjectUnit from './ProjectUnit'
+import React from "react"
+import Section from "./Section"
+import ProjectUnit from "./ProjectUnit"
 
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql } from "gatsby"
 
 //import connectorLogo from '../../assets/images/projects/connector.png'
 //import rogueLogo from '../../assets/images/projects/rogue.png'
 //import olaLogo from '../../assets/images/projects/ola.svg'
 
-export default ( children ) => (
+export default children => (
   <StaticQuery
     query={graphql`
       query ProjectsSectionQuery {
-        allContentfulProject(
-          sort: {
-            fields: [year],
-            order:DESC
-          }
-        ) {
-            nodes {
-              id
-              logo {
-                file {
-                  url
-                }
+        allContentfulProject(sort: { fields: [year], order: DESC }) {
+          nodes {
+            id
+            logo {
+              file {
+                url
               }
-              colour
-              title
-              link
-              subtitle
-              role
-              year
             }
-          
+            colour
+            title
+            link
+            subtitle
+            role
+            year
+          }
         }
       }
     `}
     render={data => (
-        <Section title="These are some selected projects from the last years that I'm really proud of">
-          <div className="row">
+      <Section title="These are some selected projects from the last years that I'm really proud of">
+        <div className="row">
           {data.allContentfulProject.nodes.map(node => (
             <ProjectUnit
               id={node.id}
@@ -80,8 +74,8 @@ export default ( children ) => (
               year="2017"
             />
             {*/}
-          </div>
-        </Section>
+        </div>
+      </Section>
     )}
   />
 )

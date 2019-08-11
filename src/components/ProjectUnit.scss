@@ -1,13 +1,12 @@
-@import '../assets/scss/main.scss';
+@import "../assets/scss/main.scss";
 
 .experience-unit {
-
   margin-bottom: 1em;
 
   .image {
     width: 100%;
     height: 130px;
-    background-size: calc( 100% - 80px );
+    background-size: calc(100% - 80px);
     background-repeat: no-repeat;
     background-position: center;
     border: 1px solid $border-color;
@@ -21,7 +20,7 @@
       box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.3);
     }
   }
-  
+
   .title {
     padding: 8px 0px;
     font-size: 1.8rem;
@@ -38,21 +37,21 @@
     margin-bottom: 1rem;
   }
 
-  @include media('>=medium', '<large') {
+  @include media(">=medium", "<large") {
     .image {
       height: 110px;
     }
   }
 
-  @include media('<=medium', '>xsmall') {
+  @include media("<=medium", ">xsmall") {
     padding-bottom: 15px;
-    
+
     .image {
       height: 140px;
     }
   }
 
-  @include media('<=xsmall') {
+  @include media("<=xsmall") {
     padding-bottom: 15px;
 
     .image {

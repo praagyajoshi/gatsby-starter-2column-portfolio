@@ -1,4 +1,4 @@
-@import '../assets/scss/main.scss';
+@import "../assets/scss/main.scss";
 
 $max-width: 230px;
 $margin-bottom: 40px;
@@ -16,8 +16,8 @@ $margin-bottom: 40px;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%); /* For Webkit browsers */
     filter: gray; /* For IE 6 - 9 */
-    transition: all .6s ease;
-    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease; /* Fade to color for Chrome and Safari */
     margin-bottom: $margin-bottom;
 
     &:hover {
@@ -43,21 +43,19 @@ $margin-bottom: 40px;
     }
   }
 
-  @include media('>small', '<=medium') {
+  @include media(">small", "<=medium") {
     .bio {
-
     }
   }
 
-  @include media('<=small') {
+  @include media("<=small") {
     .bio {
-      line-height: 2.0rem;
+      line-height: 2rem;
       font-size: 1.4rem;
-
     }
   }
 
-  @include media('<=medium') {
+  @include media("<=medium") {
     text-align: center;
     margin-bottom: 0px;
     max-width: 100%;

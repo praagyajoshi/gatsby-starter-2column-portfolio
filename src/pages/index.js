@@ -79,7 +79,7 @@ const IndexPage = ({ data }) => (
       expires={150}
     >
       This website uses cookies so I can find ways to improve it over time.
-      Because of regulation I am obliged to tell you so, but no worries, all
+      Because of regulation, I am obliged to tell you so, but no worries, all
       data is kept anonymous and never shared with third-parties.{" "}
     </CookieConsent>
   </div>

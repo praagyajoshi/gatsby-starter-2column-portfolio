@@ -8,7 +8,13 @@
   "license": "MIT",
   "scripts": {
     "dev": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
     "build": "gatsby build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   },
   "dependencies": {
     "dotenv": "^8.0.0",
@@ -30,11 +36,15 @@
     "include-media": "^1.4.9",
     "node-sass": "^4.12.0",
     "react": "^16.9.0",
+    "react-cookie-consent": "^2.3.2",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
     "react-router-dom": "^5.0.1"
   },
   "devDependencies": {
+    "husky": "^3.0.3",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
     "webpack": "^4.39.1"
   }
 }

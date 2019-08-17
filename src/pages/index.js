@@ -1,13 +1,17 @@
 import React from "react"
+import { graphql } from "gatsby"
+import Helmet from "react-helmet"
+import CookieConsent from "react-cookie-consent"
+
+import "../components/i18n"
+import { Trans } from "react-i18next"
+
 import ProjectsSection from "../components/ProjectsSection"
 import About from "../components/About"
 import Links from "../components/Links"
 import PropTypes from "prop-types"
-import Helmet from "react-helmet"
 import "./index.scss"
 
-import { graphql } from "gatsby"
-import CookieConsent from "react-cookie-consent"
 import profileImage from "../assets/images/gusfune.jpg"
 import favicon16 from "../assets/favicons/favicon-16x16.png"
 import favicon32 from "../assets/favicons/favicon-32x32.png"
@@ -50,7 +54,8 @@ const IndexPage = ({ data }) => (
       />
       <div className="main">
         <h2>
-          Hi, I'm <span className="bold">Gus Fune</span>
+          <Trans i18nKey="hi">Hi</Trans>, I'm{" "}
+          <span className="bold">Gus Fune</span>
         </h2>
 
         <h3 className="bold">

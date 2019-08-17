@@ -4,10 +4,6 @@ import ProjectUnit from "./ProjectUnit"
 
 import { StaticQuery, graphql } from "gatsby"
 
-//import connectorLogo from '../../assets/images/projects/connector.png'
-//import rogueLogo from '../../assets/images/projects/rogue.png'
-//import olaLogo from '../../assets/images/projects/ola.svg'
-
 export default children => (
   <StaticQuery
     query={graphql`
@@ -23,6 +19,11 @@ export default children => (
             colour
             title
             link
+            links {
+              link
+              name
+              platform
+            }
             subtitle
             role
             year

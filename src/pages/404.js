@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import { Trans } from "react-i18next"
 
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import "../components/i18n"
 
 const ErrorPage = ({ data }) => (

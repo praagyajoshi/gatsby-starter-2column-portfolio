@@ -33,12 +33,26 @@ export default children => (
         {data.allContentfulRecommendation.nodes.map(node => (
           <RecommendationUnit
             id={node.id}
+            key={node.id}
             photo={node.photo}
             name={node.name}
             context={node.context}
             text={node.content.content}
           />
         ))}
+        <div className="row">
+          <div className="col-xs-12">
+            <p>
+              <a
+                href="https://www.linkedin.com/in/gusfune/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Want to read more? Check my Linkedin
+              </a>
+            </p>
+          </div>
+        </div>
       </Section>
     )}
   />

@@ -1,12 +1,21 @@
 import React, { Component } from "react"
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faGithub,
+  faTwitter,
+  faLinkedin,
+  faMedium,
+  faSteam,
+} from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+
 import "./Links.scss"
-import "font-awesome/css/font-awesome.min.css"
 
 class Links extends Component {
   render() {
     return (
-      <div className="links">
+      <div className="sidebar-links">
         <ul className="icons-list">
           <li className="icon">
             <a
@@ -14,7 +23,7 @@ class Links extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa fa-github"></i>
+              <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
           <li className="icon">
@@ -23,7 +32,7 @@ class Links extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa fa-twitter"></i>
+              <FontAwesomeIcon icon={faTwitter} />
             </a>
           </li>
           <li className="icon">
@@ -32,7 +41,7 @@ class Links extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa fa-linkedin"></i>
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </li>
           <li className="icon">
@@ -41,7 +50,7 @@ class Links extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa fa-medium"></i>
+              <FontAwesomeIcon icon={faMedium} />
             </a>
           </li>
           <li className="icon">
@@ -50,7 +59,7 @@ class Links extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa fa-steam"></i>
+              <FontAwesomeIcon icon={faSteam} />
             </a>
           </li>
           <li className="icon">
@@ -59,7 +68,7 @@ class Links extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa fa-envelope"></i>
+              <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </li>
         </ul>

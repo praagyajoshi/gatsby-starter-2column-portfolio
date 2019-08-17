@@ -43,7 +43,11 @@ export default children => (
         <div className="row">
           <div className="col-xs-12">
             <p>
-              <a href="https://www.linkedin.com/in/gusfune/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/gusfune/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Want to read more? Check my Linkedin
               </a>
             </p>

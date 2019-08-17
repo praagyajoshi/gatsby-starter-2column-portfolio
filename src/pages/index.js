@@ -31,16 +31,3 @@ IndexPage.propTypes = {
 }
 
 export default IndexPage
-
-export const query = graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
-        description
-        url
-        keywords
-      }
-    }
-  }
-`

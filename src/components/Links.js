@@ -6,7 +6,7 @@ import "font-awesome/css/font-awesome.min.css"
 class Links extends Component {
   render() {
     return (
-      <div className="links">
+      <div className="sidebar-links">
         <ul className="icons-list">
           <li className="icon">
             <a

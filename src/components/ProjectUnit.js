@@ -37,7 +37,6 @@ class ProjectUnit extends Component {
             <br />
           </div>
         )}
-        {console.log(this.props.links)}
         {this.props.links && (
           <div className="links">
             {this.props.links.map(node => (

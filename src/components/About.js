@@ -32,7 +32,6 @@ export default () => (
             fluid={data.Avatar.childImageSharp.fluid}
           />
         </div>
-        {console.log(data)}
         <div className="bio">
           <p>
             I’m an experienced product manager who can fix hard-to-find bugs,

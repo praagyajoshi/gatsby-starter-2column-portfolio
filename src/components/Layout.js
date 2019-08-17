@@ -20,7 +20,7 @@ const Layout = ({ children, location }) => (
           siteMetadata {
             title
             description
-            url
+            siteUrl
             keywords
           }
         }
@@ -36,7 +36,7 @@ const Layout = ({ children, location }) => (
               content: data.site.siteMetadata.description,
             },
             { name: "keywords", content: data.site.siteMetadata.keywords },
-            { property: "og:url", content: data.site.siteMetadata.url },
+            { property: "og:url", content: data.site.siteMetadata.siteUrl },
             { property: "og:image", content: profileImage },
             { property: "og:title", content: data.site.siteMetadata.title },
             {

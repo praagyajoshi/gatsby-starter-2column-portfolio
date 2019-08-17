@@ -2,10 +2,11 @@ require("dotenv").config()
 
 module.exports = {
   plugins: [
-    "gatsby-plugin-sass",
-    "gatsby-plugin-react-helmet",
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -33,6 +34,6 @@ module.exports = {
     description:
       "I'm a highly technical Web & Mobile Product Manager who delivered over 100 products to scale.",
     keywords: "tech lead, product manager, portfolio, personal website",
-    url: "https://gusfune.com",
+    siteUrl: "https://gusfune.com",
   },
 }

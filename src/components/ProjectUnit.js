@@ -1,6 +1,10 @@
 import React, { Component } from "react"
 import "./ProjectUnit.scss"
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faAndroid, faApple } from "@fortawesome/free-brands-svg-icons"
+import { faGlasses, faGlobeEurope } from "@fortawesome/free-solid-svg-icons"
+
 class ProjectUnit extends Component {
   render() {
     return (
@@ -31,6 +35,30 @@ class ProjectUnit extends Component {
             <br />
             <strong>Year:</strong> {this.props.year}
             <br />
+          </div>
+        )}
+        {console.log(this.props.links)}
+        {this.props.links && (
+          <div className="links">
+            {this.props.links.map(node => (
+              <a
+                href={node.link}
+                target="_blank"
+                id={node.name}
+                rel="noopener noreferrer"
+              >
+                {node.platform === "android" && (
+                  <FontAwesomeIcon icon={faAndroid} />
+                )}
+                {node.platform === "ios" && <FontAwesomeIcon icon={faApple} />}
+                {node.platform === "iot" && (
+                  <FontAwesomeIcon icon={faGlasses} />
+                )}
+                {node.platform === "web" && (
+                  <FontAwesomeIcon icon={faGlobeEurope} />
+                )}
+              </a>
+            ))}
           </div>
         )}
       </div>

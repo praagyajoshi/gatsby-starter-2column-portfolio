@@ -44,6 +44,7 @@ class ProjectUnit extends Component {
                 href={node.link}
                 target="_blank"
                 id={node.name}
+                key={node.name}
                 rel="noopener noreferrer"
               >
                 {node.platform === "android" && (

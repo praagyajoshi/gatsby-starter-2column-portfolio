@@ -37,6 +37,7 @@ export default children => (
           {data.allContentfulProject.nodes.map(node => (
             <ProjectUnit
               id={node.id}
+              key={node.id}
               logo={node.logo.file.url}
               colour={node.colour}
               title={node.title}

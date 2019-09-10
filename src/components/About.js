@@ -3,11 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import "./About.scss"
 
-import { connect } from "react-redux"
-
-import { toggleDarkMode } from "../state/app"
-
-const About = ({ isDarkMode, dispatch }) => (
+const About = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -56,22 +52,8 @@ const About = ({ isDarkMode, dispatch }) => (
             fixed={data.CSPOImage.childImageSharp.fixed}
           />
         </div>
-        <div>
-          <button
-            style={isDarkMode ? { background: "black", color: "white" } : null}
-            onClick={() => dispatch(toggleDarkMode(!isDarkMode))}
-          >
-            Dark mode is {isDarkMode ? "on" : "off"}
-          </button>
-        </div>
       </div>
     )}
   />
 )
-
-export default connect(
-  state => ({
-    isDarkMode: state.app.isDarkMode,
-  }),
-  null
-)(About)
+export default About

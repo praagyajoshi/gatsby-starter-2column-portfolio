@@ -1,0 +1,13 @@
+@import "../assets/scss/main.scss";
+.DarkSwitch {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+
+  @include themify($themes) {
+    color: themed("sideColor");
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

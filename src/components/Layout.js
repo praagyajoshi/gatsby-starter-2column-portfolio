@@ -8,6 +8,7 @@ import PropTypes from "prop-types"
 import { connect } from "react-redux"
 
 import About from "../components/About"
+import DarkSwitch from "../components/DarkSwitch"
 import Links from "../components/Links"
 import profileImage from "../assets/images/gusfune.jpg"
 import favicon16 from "../assets/favicons/favicon-16x16.png"
@@ -58,6 +59,7 @@ const Layout = ({ children, isDarkMode, dispatch }) => (
               <About />
             </div>
             <div className="bottom">
+              <DarkSwitch />
               <Links />
             </div>
           </div>

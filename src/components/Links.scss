@@ -2,7 +2,7 @@
 
 .sidebar-links {
   @include themify($themes) {
-    color: themed("mainColor");
+    color: themed("sideColor");
     border-top: 1px solid themed("borderColorDark");
   }
   padding-top: 20px;
@@ -24,9 +24,8 @@
     }
   }
   a {
-    @include themify($themes) {
-      color: themed("mainColor");
-    }
+    color: inherit;
+
     transition: all 0.6s ease;
     -webkit-transition: all 0.6s ease; /* Fade to color for Chrome and Safari */
 
@@ -38,9 +37,6 @@
   }
 
   .small {
-    @include themify($themes) {
-      color: themed("mainColor");
-    }
     font-size: 1.3rem;
     transition: all 0.6s ease;
     -webkit-transition: all 0.6s ease; /* Fade to color for Chrome and Safari */

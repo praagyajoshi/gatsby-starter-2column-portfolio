@@ -48,14 +48,16 @@ class ProjectUnit extends Component {
                 rel="noopener noreferrer"
               >
                 {node.platform === "android" && (
-                  <FontAwesomeIcon icon={faAndroid} />
+                  <FontAwesomeIcon icon={faAndroid} width="32" />
                 )}
-                {node.platform === "ios" && <FontAwesomeIcon icon={faApple} />}
+                {node.platform === "ios" && (
+                  <FontAwesomeIcon icon={faApple} width="32" />
+                )}
                 {node.platform === "iot" && (
-                  <FontAwesomeIcon icon={faGlasses} />
+                  <FontAwesomeIcon icon={faGlasses} width="32" />
                 )}
                 {node.platform === "web" && (
-                  <FontAwesomeIcon icon={faGlobeEurope} />
+                  <FontAwesomeIcon icon={faGlobeEurope} width="32" />
                 )}
               </a>
             ))}

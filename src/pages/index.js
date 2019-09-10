@@ -1,5 +1,4 @@
 import React from "react"
-import { graphql } from "gatsby"
 import PropTypes from "prop-types"
 import { Trans } from "react-i18next"
 

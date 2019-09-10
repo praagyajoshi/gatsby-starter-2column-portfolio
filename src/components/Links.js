@@ -23,7 +23,7 @@ class Links extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faGithub} />
+              <FontAwesomeIcon icon={faGithub} width="22" />
             </a>
           </li>
           <li className="icon">
@@ -32,7 +32,7 @@ class Links extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faTwitter} />
+              <FontAwesomeIcon icon={faTwitter} width="22" />
             </a>
           </li>
           <li className="icon">
@@ -41,7 +41,7 @@ class Links extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faLinkedin} />
+              <FontAwesomeIcon icon={faLinkedin} width="22" />
             </a>
           </li>
           <li className="icon">
@@ -50,7 +50,7 @@ class Links extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faMedium} />
+              <FontAwesomeIcon icon={faMedium} width="22" />
             </a>
           </li>
           <li className="icon">
@@ -59,7 +59,7 @@ class Links extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faSteam} />
+              <FontAwesomeIcon icon={faSteam} width="22" />
             </a>
           </li>
           <li className="icon">
@@ -68,7 +68,7 @@ class Links extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faEnvelope} />
+              <FontAwesomeIcon icon={faEnvelope} width="22" />
             </a>
           </li>
         </ul>

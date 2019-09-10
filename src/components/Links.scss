@@ -1,7 +1,7 @@
 @import "../assets/scss/main.scss";
 
 .sidebar-links {
-  color: $grey-color;
+  color: $main-color;
   border-top: 1px solid $border-color-dark;
   padding-top: 20px;
 
@@ -22,12 +22,12 @@
     }
   }
   a {
-    color: $grey-color;
+    color: $main-color;
     transition: all 0.6s ease;
     -webkit-transition: all 0.6s ease; /* Fade to color for Chrome and Safari */
 
     &:hover {
-      color: white;
+      color: $main-contrast;
     }
   }
 
@@ -36,6 +36,6 @@
     transition: all 0.6s ease;
     -webkit-transition: all 0.6s ease; /* Fade to color for Chrome and Safari */
     cursor: normal;
-    color: $grey-color;
+    color: $main-color;
   }
 }

@@ -14,9 +14,7 @@ import favicon16 from "../assets/favicons/favicon-16x16.png"
 import favicon32 from "../assets/favicons/favicon-32x32.png"
 import "./Layout.scss"
 
-import { toggleDarkMode } from "../state/app"
-
-const Layout = ({ children, location, isDarkMode, dispatch }) => (
+const Layout = ({ children, isDarkMode, dispatch }) => (
   <StaticQuery
     query={graphql`
       query MetadataQuery {
@@ -53,18 +51,8 @@ const Layout = ({ children, location, isDarkMode, dispatch }) => (
             { rel: "icon", type: "image/png", sizes: "32x32", href: favicon32 },
           ]}
         />
-        <div className="index">
+        <div className={("index", isDarkMode ? "dark" : "light")}>
           <div className="main">{children}</div>
-          <div>
-            <button
-              style={
-                isDarkMode ? { background: "black", color: "white" } : null
-              }
-              onClick={() => dispatch(toggleDarkMode(!isDarkMode))}
-            >
-              Dark mode is {isDarkMode ? "on" : "off"}
-            </button>
-          </div>
 
           <div className="aside">
             <div className="top">

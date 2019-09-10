@@ -36,7 +36,8 @@ $themes: (
   light: (
     mainColor: #a5a5a5,
     mainColorLight: #cccccc,
-    mainBackground: #000000,
+    mainBackground: #ffffff,
+    sideBackground: #000000,
     mainContrast: #ffffff,
     borderCollie: #d8d8d8,
     // 🐕
@@ -44,11 +45,12 @@ $themes: (
     boxShadowColor: rgba(0, 0, 0, 0.3),
   ),
   dark: (
-    mainColor: #a5a5a5,
+    mainColor: #ebebeb,
     mainColorLight: #cccccc,
-    mainBackground: #000000,
-    mainContrast: #ffffff,
-    borderColor: #d8d8d8,
+    mainBackground: #303437,
+    sideBackground: #000000,
+    mainContrast: #000000,
+    borderCollie: #d8d8d8,
     borderColorDark: #3a3a3a,
     boxShadowColor: rgba(0, 0, 0, 0.3),
   ),

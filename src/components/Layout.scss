@@ -87,7 +87,10 @@ $aside-width: 35%;
 
 .main {
   margin: 0 auto;
-
+  @include themify($themes) {
+    background: themed("mainBackground");
+    color: themed("mainColor");
+  }
   h3 {
     font-size: 2.4rem;
     line-height: 1.6;
@@ -148,7 +151,7 @@ $aside-width: 35%;
 
 .aside {
   @include themify($themes) {
-    background-color: themed("mainBackground");
+    background-color: themed("sideBackground");
     color: themed("mainContrast");
   }
   align-self: stretch;

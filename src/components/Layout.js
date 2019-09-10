@@ -5,6 +5,8 @@ import Helmet from "react-helmet"
 import CookieConsent from "react-cookie-consent"
 import PropTypes from "prop-types"
 
+import { connect } from "react-redux"
+
 import About from "../components/About"
 import Links from "../components/Links"
 import profileImage from "../assets/images/gusfune.jpg"
@@ -12,7 +14,9 @@ import favicon16 from "../assets/favicons/favicon-16x16.png"
 import favicon32 from "../assets/favicons/favicon-32x32.png"
 import "./Layout.scss"
 
-const Layout = ({ children, location }) => (
+import { toggleDarkMode } from "../state/app"
+
+const Layout = ({ children, location, isDarkMode, dispatch }) => (
   <StaticQuery
     query={graphql`
       query MetadataQuery {
@@ -51,6 +55,16 @@ const Layout = ({ children, location }) => (
         />
         <div className="index">
           <div className="main">{children}</div>
+          <div>
+            <button
+              style={
+                isDarkMode ? { background: "black", color: "white" } : null
+              }
+              onClick={() => dispatch(toggleDarkMode(!isDarkMode))}
+            >
+              Dark mode is {isDarkMode ? "on" : "off"}
+            </button>
+          </div>
 
           <div className="aside">
             <div className="top">
@@ -82,4 +96,9 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default connect(
+  state => ({
+    isDarkMode: state.app.isDarkMode,
+  }),
+  null
+)(Layout)

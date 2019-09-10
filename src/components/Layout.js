@@ -53,7 +53,6 @@ const Layout = ({ children, isDarkMode, dispatch }) => (
         />
         <div className={("index", isDarkMode ? "dark" : "light")}>
           <div className="main">{children}</div>
-
           <div className="aside">
             <div className="top">
               <About />

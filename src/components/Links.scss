@@ -1,8 +1,10 @@
 @import "../assets/scss/main.scss";
 
 .sidebar-links {
-  color: $main-color;
-  border-top: 1px solid $border-color-dark;
+  @include themify($themes) {
+    color: themed("mainColor");
+    border-top: 1px solid themed("borderColorDark");
+  }
   padding-top: 20px;
 
   ul.icons-list {
@@ -22,20 +24,26 @@
     }
   }
   a {
-    color: $main-color;
+    @include themify($themes) {
+      color: themed("mainColor");
+    }
     transition: all 0.6s ease;
     -webkit-transition: all 0.6s ease; /* Fade to color for Chrome and Safari */
 
     &:hover {
-      color: $main-contrast;
+      @include themify($themes) {
+        color: themed("mainContrast");
+      }
     }
   }
 
   .small {
+    @include themify($themes) {
+      color: themed("mainColor");
+    }
     font-size: 1.3rem;
     transition: all 0.6s ease;
     -webkit-transition: all 0.6s ease; /* Fade to color for Chrome and Safari */
     cursor: normal;
-    color: $main-color;
   }
 }

@@ -1,2 +1,55 @@
-@import "_colors.scss";
-@import "_mixins.scss";
+@import "~include-media/dist/_include-media.scss";
+
+@mixin themify($themes: $themes) {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
+
+$breakpoints: (
+  xsmall: 480px,
+  small: 736px,
+  medium: 980px,
+  large: 1280px,
+  xlarge: 1800px,
+);
+
+$themes: (
+  light: (
+    mainColor: #a5a5a5,
+    mainColorLight: #cccccc,
+    mainBackground: #000000,
+    mainContrast: #ffffff,
+    borderCollie: #d8d8d8,
+    // 🐕
+      borderColorDark: #3a3a3a,
+    boxShadowColor: rgba(0, 0, 0, 0.3),
+  ),
+  dark: (
+    mainColor: #a5a5a5,
+    mainColorLight: #cccccc,
+    mainBackground: #000000,
+    mainContrast: #ffffff,
+    borderColor: #d8d8d8,
+    borderColorDark: #3a3a3a,
+    boxShadowColor: rgba(0, 0, 0, 0.3),
+  ),
+);

@@ -147,10 +147,12 @@ $aside-width: 35%;
 }
 
 .aside {
+  @include themify($themes) {
+    background-color: themed("mainBackground");
+    color: themed("mainContrast");
+  }
   align-self: stretch;
   margin: 0 auto;
-  background-color: $main-background;
-  color: $main-contrast;
   max-width: 358px;
 
   // Positioning on the side for

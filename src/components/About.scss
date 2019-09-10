@@ -4,7 +4,9 @@ $max-width: 230px;
 $margin-bottom: 40px;
 
 .about {
-  color: $main-color-light;
+  @include themify($themes) {
+    color: themed("mainColorLight");
+  }
   max-width: $max-width;
 
   .image {

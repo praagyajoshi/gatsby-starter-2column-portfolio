@@ -51,7 +51,7 @@ const Layout = ({ children, isDarkMode, dispatch }) => (
             { rel: "icon", type: "image/png", sizes: "32x32", href: favicon32 },
           ]}
         />
-        <div className={("index", isDarkMode ? "dark" : "light")}>
+        <div className={("index", isDarkMode ? "theme-dark" : "theme-light")}>
           <div className="main">{children}</div>
           <div className="aside">
             <div className="top">
